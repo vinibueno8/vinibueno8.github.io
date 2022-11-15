@@ -1,0 +1,903 @@
+﻿@media (min-width: 768px){      /* MD */
+    body{
+        overflow-x: hidden;
+        font-size: 10px;
+    }
+    #cabecalho-elements{
+        justify-content: space-between;
+    }
+    .footer1, .footer2, .footer3{
+        width: 30%;
+    }
+    header, footer{
+        background: #153969;
+        height: 80px;
+    }
+    footer{
+        height: 200px;
+        font-size: 1.2em;
+    }
+    .header-logo{
+        margin-left:20px ;
+    }
+    .gmail{
+        font-size: 1.35em;
+    }
+    .img-insta, .img-face, .img-maps{
+        height: 6em;
+        width: 6em;
+        margin: 10px;
+    }
+    #header2{
+        align-items: center; 
+        background: #2E4D78;
+        width: 100%;
+        height: 60px;
+        font-size: 0.9em;
+    }
+    .img-menu{
+        display: none;
+    }
+    .nav-link{
+        transition:none;
+    }
+    .header-login{
+        height: 4em;
+        width: 4em;
+    }
+    .img-login{
+        height: 64px;
+        width: 100px;
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .line{
+        height: 4px;
+        width: 37px;
+        background: #ffffff;
+        margin-top: 8px;
+        border-radius: 2px; 
+        transition: all 0.3s ease-in-out;  
+    }
+    .line:first-child{
+        margin-top: 0px;
+    }
+    .active .line:nth-child(2){
+        opacity: 0;
+    } 
+    .active .line:first-child{
+        transform:translateY(12px) rotate(45deg);
+    } 
+    .active .line:last-child{
+        transform:translateY(-12px) rotate(-45deg);
+    } 
+    .nav-menu{
+        position: relative;
+        left:0;
+        top:0;
+        height: 30px;
+        width: 510px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 0;
+        transition: 0;
+        -webkit-box-shadow: 0px 0px 0px 0px;
+        -moz-box-shadow: 0px 0px 0px 0px;
+        box-shadow: 0px 0px 0px 0px;
+    }
+    .nav-list{
+        height: 80px;
+        text-align: left;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px;
+        font-size: 1em;
+    }
+    .nav-item{
+        margin: 0;
+        align-items: center;
+    }
+    .active{
+        left: 0;
+    }
+    .active2{
+        display: block;
+    }
+    .popOut-Login{
+        margin-top: -65px;
+        height: 35em;
+        width: 38em;
+        background: #153969;
+        border-radius: 20px;
+        text-align: center;
+        color: #fff;
+        -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.118);
+        -moz-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.118);
+        box-shadow: 10px 7px 5px 5px rgba(0, 0, 0, 0.118);
+        border: 1px solid #2e4e7c;
+    }
+    .popOut-Login p{
+        font-size: 1.5em;
+    }
+    .popOut-Login label{
+        font-size: 1.5em;
+    }
+    .close-popOut{
+        position: absolute;
+        left: 90%;
+        bottom: 85%;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    /*Pagina da Loja*/
+
+    .produtos{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px;
+    }
+    
+    .produto-elements{
+        height: 470px;
+        width: 300px;
+        background: #ffffff;
+        border-radius: 15px;
+        margin: 30px;
+        -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.118);
+        -moz-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.118);
+        box-shadow: 10px 7px 5px 5px rgba(0, 0, 0, 0.118);
+        transition: all .38s ease;
+    }
+
+    .produto-elements:hover{
+        transform: translateY(-5px);
+        cursor: pointer;
+    }
+    
+    .produto-elements img{
+        height: 200px;
+        width: 200px;
+        margin: 30px;
+        margin-left: 20%;
+    }
+    
+    .produto-elements h2{
+        color: #000;
+        font-size: 25px
+    }
+    
+    .produto-elements button{
+        background-color:#2DBCE9;
+        height: 50px;
+        width: 175px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 20px;
+        margin-left: 65px;
+        cursor: pointer;
+    }
+    
+    .produto-elements button:hover{
+        background: #2dbde98a;
+    }
+
+    .prod{
+        height: 400px;
+        width: 73%;
+        font-size: 1.4em;
+    }
+    
+    .prod img{
+        height:15em;
+        margin: 15% 50px 25% 50px;
+    }
+
+
+    /*Pagina de Lagos*/
+
+    #content{
+        width: 100%;
+    }
+    
+    #img-lago{
+        width: 100%;
+    }
+    .subDivs{
+        width: 100%;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+    
+    }
+
+    /*Cadastro*/
+
+    :root{
+        --color-red: #e63636;
+    }
+
+    
+    .form-content{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #formulario{ 
+        padding: 5%;
+        background-color: #ADD8E6;
+        width: 50vw;
+        border-radius: 5px;
+        margin: 10px;
+        padding-top: 2%;
+    }
+    #formulario p{
+        color: #f00;
+        float: right;
+    }
+
+    .span-required{
+        font-size: 12px;
+        margin: 3px 0 0 1px;
+        color: var(--color-red);
+        display: none;
+    }
+
+    .inputs{
+        border-radius: 5px;
+        border: 1px solid #fff;
+        height: 30px;
+        width: 50vw;
+    }
+    
+    .CadLabel{ 
+        font-weight: bold;
+    }
+    
+    #formulario label{
+        text-align: center;
+        font-size: 1.2em;
+    }
+    
+    #botao-cad{
+        height: 40px;
+        width:50%;
+        background: #0BCFFA;
+        color: #000;
+        box-shadow: 2px 2px 2px #5a6e75;
+        border: 0px;
+        border-radius: 5px;
+        margin-left: 25%;
+        cursor: pointer;
+    }
+    #botao-cad:hover{
+        background: #05c7f3;
+        border: 1px solid #86a2ac5d;
+    }
+    /* Pagina de peixes */
+
+   .fish{
+		
+width: 100%;
+		
+height: auto;
+	
+}
+
+    /* Pagina do cardápio */
+
+    #header3{
+        display: flex;
+        align-items: center; 
+        background: #add8ea;
+        width: 100%;
+        height: 7em;
+    }
+    
+    #header3-elements{
+        color: #000;
+        font-size: 1em;
+        margin-left: 40px;
+    }
+    
+    #header4{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background: #153969;
+        width: 100%;
+        height: 35em;
+    }
+    
+    #header4-elements{
+        color: #ffff;
+        font-size: 1em;
+        margin-left: 10px;
+      
+       
+    }
+    
+    #header6{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background: #153969;
+        width: 100%;
+        height: 40em;
+    }
+    
+    #header6-elements{
+        color: #ffff;
+        font-size: 1em;
+        margin-left: 10px;
+    }
+    
+    
+    #header8{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background: #153969;
+        width: 100%;
+        height: 50em;
+    }
+    
+    #header8-elements{
+        color: #ffff;
+        font-size: 1em;
+        margin-left: 10px;
+    }
+    
+    .linhav{
+        width: 10px;
+        height: 30em;
+        background-image: linear-gradient(to right, #00F38D , #0BCFFA);
+    }
+    
+    .linhav2{
+        width: 10px;
+        height: 36em;
+        background-image: linear-gradient(to right, #00F38D , #0BCFFA);
+    }
+    
+    .linhav3{
+        width: 10px;
+        height: 45em;
+        background-image: linear-gradient(to right, #00F38D , #0BCFFA);
+    }
+    
+
+    /*Pagina de Horarios*/
+
+    #calendario{
+        height: 805px;
+        width: 60%;
+        background: #153969;
+        margin: 20px;
+        border-radius: 45px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .diaFechado, .diaAberto, .calendarioTxt{
+        height: 80px;
+        width: 20vw;
+        border-radius: 25px;
+        background: #5EA9DB;
+        margin:30px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #content-element{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+    
+    #footer-calendario{
+        width: 80%;
+        height: 300px;
+        background: #153969;
+        margin: 20px;
+        border-radius: 45px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2em;
+    }
+
+    /*Pagina de duvidas*/
+
+    .subDivs{
+        width: 100%;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+
+    }
+    #caixa-duvidas{
+    width: 100%;
+    background: #D9D9D9;
+    }
+
+    .imgSn{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .sd1{
+        flex-direction: row;
+    }
+
+    .imgProibido{
+        display: block;
+    }
+
+    /* Pagina de reservas */
+
+    #reservas{
+        width: 100%;
+        height: 260px;
+        background-color: #2E4D78;
+    }
+    .pescas1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        border-radius: 15px;
+    }
+
+    .pescas2{
+        width: 50em;
+        height: 25em;
+        margin-left: 1em;
+        margin-top: 1em;
+        font-size: 0.8em;
+        background-color: #153969;
+        color:white;
+        border-radius: 10px;
+       
+    }
+
+    .pescas3{
+        width: 50em;
+        height: 25em;
+        margin-left: 1em;
+        margin-top: 1em;
+        font-size: 0.8em;
+        background-color: #153969;
+        color:white;
+        border-radius: 10px;
+        margin-right: 1em;
+       
+    }
+
+    .sec-reservas{
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    } 
+
+    .reservas-content{
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .reservas-content img{  
+        width: 40%;
+        height: auto;
+    }
+         
+    .box-reservas{
+        box-shadow: 10px 7px 5px 5px rgba(0, 0, 0, 0.118);
+        background: #fff;
+        width: 200px;
+        height: 350px;
+        padding: 16px;
+        border-radius: 15px;
+        transition: all .20s ease;
+    }
+    .box-reservas h3{
+        font-size: 25px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 8px;
+    }
+
+    .box-reservas h5{
+        font-size: 20px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+    }
+    
+    .box-reservas:hover{	
+        transform: translateY(-3px);	
+        cursor: pointer;
+    }
+
+    .botoesPacotes{
+        background-color:#2DBCE9;
+        height: 50px;
+        width: 175px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 20px;
+    }
+
+    .botoesPacotes:hover{
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    
+    #formaPagamento{
+        background-color: #fff;
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #imagensPagamento{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 40px;
+        font-size: 1em;
+    }
+
+    .pgseguro{
+        height: 40px;
+    }
+    .imgBandeiras{
+        height: 100px;
+    }
+
+/* Página Inicial */
+/* Página Inicial */
+.slider{	
+    margin: 0 auto; 
+    border-radius: 10px;	
+    margin-top: 3rem;	
+    margin-bottom: 3rem;  
+    overflow: hidden;
+    }
+
+    .slides{  
+    width: 500%;  
+    height: 400px;  
+    display: flex;
+    }
+
+    .slides input{  
+    display: none;
+    }
+
+    .slide{  
+    width: 20%;  
+    transition: 2s;
+    }
+
+    .slide img{  
+    width: 100%;  
+    height: auto;
+    }
+
+    .navigation-manual{  
+        position: absolute;  
+        width: 200px; 
+        margin-top: 10px; 
+        display: flex;  
+        justify-content: center;
+    }
+
+    .manual-btn{	
+        width: 20px;  
+        border: 2px solid #0BCFFA;  
+        padding: 15px;  
+        border-radius: 20px; 
+        cursor: pointer;  
+        transition: .3s;
+    }
+
+    .manual-btn:not(:last-child){ 
+    margin-right: 40px;
+    }
+
+    .manual-btn:hover{  
+    background: #0BCFFA;
+    }
+
+    #radio1:checked ~ .first{
+    margin-left: 0;
+    }
+
+    #radio2:checked ~ .first{ 
+    margin-left: -20%;
+    }
+
+    #radio3:checked ~ .first{  
+    margin-left: -40%;
+    }
+
+    #radio4:checked ~ .first{ 
+    margin-left: -60%;
+    }
+        
+    .sites{	
+        position: relative;	
+        width: 100%;
+        background: #FBF8F8;	
+        display: flex;	
+        align-items: center;	
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .sites-content{	
+        width: 100%;
+        max-width: 1250px;	
+        margin: 0 auto;
+        display: grid;	
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));	
+        gap: 2rem;	
+        align-items: center;
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .sites-content img{	
+        width: 40%;	
+        height: auto;	
+        margin-top: 5px;
+    }
+
+    .box-re{	
+        background: #F8F5F5;	
+        border-radius: 15px;	
+        transition: all .32s ease;
+    }
+
+    .box-re h3{	
+        font-size: 20px;	
+        font-weight: 600;	
+        color: black;
+        margin-bottom: 8px;
+    }
+
+    .box-re:hover{	
+        transform: translateY(-3px);	
+        cursor: pointer;
+    }
+
+    #notificacao img {
+        width: 140px;
+        height: 140px;
+        margin-top: 20px;	
+        margin-left: 10px;	
+        color: #000;	
+        display: block;
+    }
+
+    .desc {	
+        margin-left: 10px;	
+        font-weight: bold;	
+        font-size: 20px;
+    }
+
+
+    /* Página do peixe */
+    .fish{
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .fish-content{
+        width: 100%;
+        max-width: 1350px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .fish-content img{
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+    .box-fish{
+        box-shadow: 10px 7px 5px 5px rgba(0, 0, 0, 0.118);
+        background: #ffffff;
+        height: 360px;
+        padding: 16px;
+        border-radius: 15px;
+        transition: all .38s ease;
+    }
+    .box-fish h3{
+        font-size: 23px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 8px;
+    }
+    .box-fish h5{
+        font-size: 15px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+    }
+
+    .box-fish:hover {
+        transform: translateY(-2px);	
+    }
+
+    /* Página de desenvolvedores */
+    .team{
+        width: 100%;
+        height: auto;
+    }
+        
+    .team-content{
+        width: 100%;
+        max-width: 1350px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .team-content img{  
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .box-avatar{
+        box-shadow: 10px 7px 5px 5px rgba(0, 0, 0, 0.118);
+        width: 300px;
+        height: auto;
+        padding: 16px;
+        background: #fff;
+        border-radius: 15px;
+        transition: all .38s ease;
+    }
+
+    .box-avatar h3{
+        font-size: 23px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 8px;
+    }
+    .box-avatar h5{
+        font-size: 15px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+    }
+    .icons i{
+        display: inline-block;
+        color: #000;
+        font-size: 20px;
+        margin: 0 8px;
+        transition: all .38s ease;
+        cursor: pointer;
+    }
+    .icons i:hover{
+        transform: scale(1.2);
+    }
+    .box-avatar:hover{
+        transform: translateY(-5px);
+    }
+
+    /*Pagina do carrinho*/
+
+    .planos-carriho, .produtos-carrinho{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 35vw;
+        border: 1px solid rgb(255, 255, 255);
+        color: #fff;
+    }
+
+    .produto1-carrinho, .produto2-carrinho, .reserva1-carrinho{
+        height: 130px;
+        width: 95%;
+        background: #153969;
+        margin-top: 30px;
+        border-radius: 0 15px 15px;
+    }
+
+    .produtos-carrinho a{
+        position: absolute;
+        font-size: 1.2em;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .planos-carriho a{
+        position: absolute;
+        font-size: 1.2em;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .produtos-carrinho h1{
+        text-align: center;
+    }
+
+    .planos-carriho h1{
+        text-align: center;
+    }
+
+    .elements-carrinho{
+        display: flex;
+        min-height:100vh ;
+        width: 100vw;
+    }
+
+    .title-carrinho{
+        background: #fff; 
+        width:100%;
+    }
+
+    .formaPagamentoCarrinho{
+        width: 30vw;
+        font-size: 1em;
+    }
+
+    /*pagina do usuario*/
+
+.inputs2{
+    border-radius: 5px;
+    border: 1px solid #fff;
+    height: 30px;
+    width: 10vw;
+}
+
+}

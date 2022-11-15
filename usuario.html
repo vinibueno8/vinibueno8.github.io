@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+    <link rel="stylesheet" type="text/css" href="CSS/xs.css">
+    <link rel="stylesheet" type="text/css" href="CSS/sm.css">
+    <link rel="stylesheet" type="text/css" href="CSS/md.css">
+    <link rel="stylesheet" type="text/css" href="CSS/lg.css">
+    <link rel="stylesheet" type="text/css" href="CSS/xl.css">
+    <title>Pagina do Usuário</title>
+</head>
+<body>
+
+    <div id="header2" ><div id="header2-elements"><h1>Dados do Usuário<div class="header2-elements2"> 
+        <a href="index.html">⬅ Voltar </a></h1></div></div></div>
+        <div class="linha"></div>
+
+        <div class="form-content">
+            <div id="formulario">
+            <form id="form">
+                <div>
+                </br>
+                    <label for="txtNome" class="CadLabel">Nome Completo</label><a style="color: #f00;"> *</a><br>
+                    <br>
+                    <input type="text" placeholder="João Nascimento" class="inputs required" oninput="nameValidate()" disabled="disabled">
+                    <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+                </div>
+
+                <div>
+                </br>
+                    <label for="txtNome" class="CadLabel">Nome Social</label><a style="color: #f00;"> *</a><br>
+                    <br>
+                    <input type="text" placeholder="João Nascimento" class="inputs required" oninput="nameValidate2()" >
+                    <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+                </div>
+
+ 
+                <br>
+                <label for="Genero" class="CadLabel">Gênero</label><a style="color: #f00;"> *</a>
+                <br>
+                <br>
+                
+                    <input type="radio" class="radio" id="cad-masc" name="gen" value="masculino">
+                            <label for="masc" class="radio">Masculino</label>
+                            <input type="radio" class="radio" id="cad-fem" name="gen" value="feminino">
+                            <label for="fem" class="radio">Feminino</label>
+                            <input type="radio" class="radio" id="cad-outro" name="gen" value="outro">
+                            <label for="fem" class="radio">Outro</label>
+                            <input type="text" placeholder="não-binário" class="inputs2">
+               
+
+                            <br>
+                <br>
+                <label for="dateNasc" class="CadLabel">Data de nascimento</label><a style="color: #f00;"> *</a>
+                <br>
+                <br>
+                <div>
+                    <input type="text" placeholder="20/06/2001"class="inputs " oninput="">
+                </div>
+                
+                <br>
+                <label for="txtCpf" class="CadLabel">CPF</label><a style="color: #f00;"> *</a>
+                <br>
+                <br>
+                <div>
+                    <input type="text" placeholder="695.462.640-67" class="inputs required cpf" oninput="cpfValidate()"  disabled="disabled" >
+                    <span class="span-required">Digite apenas números</span>
+                    
+                </div>
+
+                <br>
+                <label for="txtCpf" class="CadLabel">RG</label><a style="color: #f00;"> *</a>
+                <br>
+                <br>
+                <div>
+                    <input type="text" placeholder="95.462.640-6" class="inputs required rg" oninput="rgValidate()" disabled="disabled" >
+                    <span class="span-required">Digite apenas números</span>
+                    
+                </div>
+
+                <br>
+                <label for="txtTel" class="CadLabel">Telefone</label><a style="color: #f00;"> *</a>
+                <br>
+                <br>
+                <div>
+                    <input type="text" placeholder="+55(11)99562-6457" class="inputs required phone_with_ddd" oninput=" telValidate()" id="phone_with_ddd" >
+                    <span class="span-required">Digite apenas números</span>
+                </div>
+
+                <br>
+                
+                <label for="txtEmail" class="CadLabel">E-mail</label><a style="color: #f00;"> *</a>
+                <br>
+                <br>
+                <div>
+                    <input type="email" placeholder="joaonascimento@gmail.com" class="inputs required" oninput="emailValidate()" >
+                    <span class="span-required">Digite um email válido</span>
+                </div>
+
+                
+                <br>
+                <label for="txtSenha" class="CadLabel">Senha</label><a style="color: #f00;"> (Mínimo de 8 digitos) *</a>
+                <br>
+                <br>
+                <div>
+                    <input type="password" placeholder=" • • • • • • • • • •" class="inputs required" oninput="mainPasswordValidate()" >
+                    <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+                </div>
+
+                <br>
+            
+                <label for="txtCsenha" class="CadLabel">Confirmação senha</label><a style="color: #f00;"> *</a>
+                <br><br>
+                <div>
+                    <input type="password" placeholder="• • • • • • • • • •" class="inputs required" oninput="comparePassword()">
+                    <span class="span-required">Senhas devem ser compatíveis</span>
+                </div>
+                <br>
+                <br>
+                <input type="submit" id="botao-cad" value="Salvar Alterações">
+            </form>
+        </div>
+        </div>
+    </body>
+    <script src="https://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script src="js/examples.js"></script>
+    <script>
+        const form   = document.getElementById('form');
+        const campos = document.querySelectorAll('.required');
+        const spans  = document.querySelectorAll('.span-required');
+        const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+    
+        form.addEventListener('submit', (event) => {
+            nameValidate();
+            nameValidate2();
+            cpfValidate();
+            telValidate();
+            emailValidate();
+            mainPasswordValidate();
+            comparePassword();
+        });
+    
+        function setError(index){
+            campos[index].style.border = '2px solid #e63636';
+            spans[index].style.display = 'block';
+        }
+    
+        function removeError(index){
+            campos[index].style.border = '';
+            spans[index].style.display = 'none';
+        }
+    
+        function nameValidate(){
+            if(campos[0].value.length < 3)
+            {
+                setError(0);
+            }
+            else
+            {
+                removeError(0);
+            }
+        }
+
+        function nameValidate2(){
+            if(campos[1].value.length < 3)
+            {
+                setError(1);
+            }
+            else
+            {
+                removeError(1);
+            }
+        }
+
+        function cpfValidate(){
+            if(campos[2].value.length < 14)
+            {
+                setError(2);
+            }
+            else
+            {
+                removeError(2);
+            }
+        }
+
+        function rgValidate(){
+            if(campos[3].value.length < 11)
+            {
+                setError(3);
+            }
+            else
+            {
+                removeError(3);
+            }
+        }
+
+        function telValidate(){
+            if(campos[4].value.length < 14)
+            {
+                setError(4);
+            }
+            else
+            {
+                removeError(4);
+            }
+        }
+    
+        function emailValidate(){
+            if(!emailRegex.test(campos[5].value))
+            {
+                setError(5);
+            }
+            else
+            {
+                removeError(5);
+            }
+        }
+    
+        function mainPasswordValidate(){
+            if(campos[6].value.length < 8)
+            {
+                setError(6);
+            }
+            else
+            {
+                removeError(6);
+                comparePassword();
+            }
+        }
+    
+        function comparePassword(){
+            if(campos[6].value == campos[7].value && campos[7].value.length >= 8)
+            {
+                removeError(7);
+            }
+            else
+            {
+                setError(7);
+            }
+        }
+    
+    </script>
+
+</body>
+</html>
